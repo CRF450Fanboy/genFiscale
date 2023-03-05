@@ -1,0 +1,519 @@
+:root
+{
+    --blue : rgb(0,122,204);
+}
+
+html,body
+{
+    margin-top: 0%;
+    margin-left: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(30,30,30);
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+
+#title
+{
+    text-align: center;
+    font-size: 250%;
+    color: var(--blue);
+}
+
+a 
+{
+    text-decoration: none !important;
+}
+/* not working
+#inputContainer
+{
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--blue);
+    border-radius: 10px solid var(--blue);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 40%;
+}
+*/
+
+textarea:focus, input:focus
+{
+    outline: none;
+}
+
+#inputContainer
+{
+    padding: 10px;
+    border: 5px solid var(--blue);
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 430px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* input nome */
+
+#nomeContainer
+{
+    display: flex;
+}
+
+#nomeLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputNome
+{
+    margin: 0 150px;
+    margin-right: 10px;
+    box-sizing:unset;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputNome:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputNome::selection
+{
+    border-color: red;
+}
+
+/* input cognome */
+
+#cognomeContainer
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+#cognomeLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputCognome
+{
+    margin: 0 110px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputCognome:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputCognome::selection
+{
+    border-color: red;
+}
+
+/* input sesso */
+
+#sessoContainer
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+#sessoLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputSesso
+{
+    margin: 0 155px;
+    margin-right: 10px;
+    width: 50px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputSesso:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inputSesso::selection
+{
+    border-color: red;
+}
+
+/* input comune */
+
+#comuneContainer
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+#comuneLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputComune
+{
+    margin: 0 10px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputComune:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputComune::selection
+{
+    border-color: red;
+}
+
+/* input provincia */
+
+#provinciaContainer
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+#provinciaLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputProvincia
+{
+    margin: 0 35px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputProvincia:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputProvincia::selection
+{
+    border-color: red;
+}
+
+/* input dob */
+
+#dobContainer
+{
+    margin-top: 10px;
+    display: flex;
+}
+
+#dobLabel
+{
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+#inputDob
+{
+    margin: 0 35px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputDob:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputDob::selection
+{
+    border-color: red;
+}
+
+/* input giorno */
+
+#inputGiorno
+{
+    margin: 0 35px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 10px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputGiorno:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputGiorno::selection
+{
+    border-color: red;
+}
+
+/* input mese */
+
+#inputMese
+{
+    margin: 0 0;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 10px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputMese:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputMese::selection
+{
+    border-color: red;
+}
+
+/* input anno */
+
+#inputAnno
+{
+    margin: 0 0;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 10px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+}
+
+#inputAnno:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#inputAnno::selection
+{
+    border-color: red;
+}
+
+/* input DOB */
+
+#inputDob
+{
+    margin: 0 50px;
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+    width: 175px;
+}
+
+#inputDob:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#inputDob::selection
+{
+    border-color: red;
+}
+
+/* btnGenera */
+
+#btnGenera
+{
+    margin-right: 10px;
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    font-size: 115%;
+}
+
+#btnGenera:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btnGenera::selection
+{
+    border-color: red;
+}
+
+/* output codice fiscale */
+
+#codiceContainer
+{
+    display: none;
+    margin-top: 30px;
+    display: flex;
+    margin: auto;
+    width: 50%;
+}
+
+#codiceLabel
+{
+    display: none;
+    color: var(--blue);
+    font-size: 150%;
+    font-weight: bold;
+    margin: 0 5px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#outputCodice
+{
+    background-color: rgb(45,45,48);
+    border-style: none;
+    border-radius: 30px;
+    color: var(--blue);
+    text-align: center;
+    font-weight: bold;
+    transition: .300s;
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    position:relative;
+    align-items: center;
+    width: 430px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#outputCodice:hover
+{
+    transition: .300s;
+    border-radius: 5px;
+}
+
+#outputCodice::selection
+{
+    border-color: red;
+}
+
+/* errore nome */
+#lblErrorNome
+{
+    display: none;
+    text-align: center;
+    color: var(--blue);
+    font-size: 150%;
+}
+
+/* errore cognome */
+#lblErrorCognome
+{
+    display: none;
+    text-align: center;
+    color: var(--blue);
+    font-size: 150%;
+}
+
+/* errore comune */
+#lblErrorComune
+{
+    display: none;
+    text-align: center;
+    color: var(--blue);
+    font-size: 150%;
+}
