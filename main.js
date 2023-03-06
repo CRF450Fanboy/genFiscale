@@ -36,6 +36,8 @@ if(btnGenera)
 {
     btnGenera.addEventListener("click", async function()
     {
+        outputCodice.value = "";
+        outputCodice.style.display = "none";
         codiceCatastale = await makeComune();
         cf = makeCognome() + makeNome() + makeDob() + makeMese() + makeDayAndSex() + codiceCatastale;
         letteraDiControllo = makeLetteraControllo(cf);
@@ -67,6 +69,12 @@ function makeNome()
     const vocali = "AEIOU";
     var final = "";
     var counter = 0;
+
+    if(nome.length == 2)
+    {
+        final = nome[0] + nome[1] + "X";
+        return final;
+    }
 
     for(let i = 0; i < nome.length; i++)
     {
@@ -148,6 +156,12 @@ function makeCognome()
     const vocali = "AEIOU";
     var final = "";
     var counter = 0;
+
+    if(cognome.length == 2)
+    {
+        final = cognome[0] + cognome[1] + "X";
+        return final;
+    }
 
     for(let i = 0; i < cognome.length; i++)
     {
@@ -330,7 +344,7 @@ async function makeComune()
     console.log(dati);
     var comuneFound = false;
 
-    if(!dati)
+    if(document.getElementById("inputComune").value == "")
     {
         document.getElementById("lblErrorComune").style.display = "block";
         return;
@@ -345,10 +359,8 @@ async function makeComune()
         }
     }
 
-    if(!comuneFound)
-    {
-        console.log("comune not found");
-    }
+    document.getElementById("lblErrorComune").style.display = "block";
+    return;
 }
 
 function makeLetteraControllo()
