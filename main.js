@@ -56,6 +56,7 @@ if(btnGenera)
             if(validCF)
             {
                 showCodice();
+                document.getElementById("pageTitle").innerHTML = "💩 | " + cf;
             }
         }
     });
@@ -83,8 +84,6 @@ function makeNome()
             counter++;
         }
     }
-
-    console.log("Counter: " + counter);
 
     if(counter >= 4)
     {
@@ -320,7 +319,6 @@ function makeDayAndSex()
     var sesso = document.getElementById("inputSesso");
     var chosenDate = document.getElementById("inputDob");
     var giorno = chosenDate.value[8] + chosenDate.value[9];
-    console.log(giorno);
 
     if(sesso.value == "M")
     {
